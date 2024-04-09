@@ -1,0 +1,35 @@
+body,html{
+	background-color: #F9F9F9;
+}
+#pc{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100% ;
+	z-index: 9;
+	display: none;
+	background-color: #FFFFFF;
+}
+#mp{
+	position: relative;
+	z-index: 9;
+	text-align: left;
+	display: none;
+	background-color: #ffffff;
+}
+#eixp{
+	color: #282828;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
