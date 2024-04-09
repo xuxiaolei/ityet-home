@@ -12,10 +12,7 @@ paginate_path: "liberxuepage:num"
 gems: [jekyll-paginate]
 links:
   - name:         首页
-    url:          /
-    external:     false
-  - name:         主页
-    url:          /home
+    url:          /home.html
     external:     false
   - name:         书籍
     url:          /book
