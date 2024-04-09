@@ -14,6 +14,9 @@ links:
   - name:         首页
     url:          /
     external:     false
+  - name:         主页
+    url:          /home
+    external:     false
   - name:         书籍
     url:          /book
     external:     false
