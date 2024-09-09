@@ -16,7 +16,7 @@ li{
 /* 特殊英文字体引入
 实现方式: font: 26px cnm,Arial,sans-serif; */
 @font-face {
-	font-family:cnm;src:url("../font/cnm.sb.ttf")
+	font-family:cnm;src:url("../font/ityet.ttf")
 }
 #etext{
 	width: 100%;
