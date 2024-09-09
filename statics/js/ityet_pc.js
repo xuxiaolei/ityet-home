@@ -37,6 +37,10 @@ window.onload=function()
 	setTimeout(function(){
 	    $("#xuna").show();
         divTyping.style.display = 'none';
+        let src07 = $("#nav07 iframe").data('src');
+        $("#nav07 iframe").attr('src', src07+'?t=' + new Date().getTime());
+        let src08 = $("#nav08 iframe").data('src');
+        $("#nav08 iframe").attr('src', src08+'?t=' + new Date().getTime());
 	},3000);
 	
 	//单击选择框-宽度变化
