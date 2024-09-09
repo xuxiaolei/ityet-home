@@ -12,35 +12,35 @@
 </head>
 <body class="bg-grey" gtools_scp_screen_capture_injected="true">
 <div id="MathJax_Message" style="display: none;"></div>
-<!--<header id="header" class="header bg-white">-->
-<!--    <div class="navbar-container">-->
-<!--        <a href="/" title="访问 {{  site.title }}" class="navbar-logo"> <img src="{{ site.url }}/style/images/logo.png"-->
-<!--                                                                             alt="{{ site.title }}"> </a>-->
-<!--        <div class="navbar-menu">-->
-<!--            {% for link in site.links %}-->
-<!--            <a href="{{ link.url }}" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a>-->
-<!--            {% endfor %}-->
-<!--        </div>-->
-<!--        <div class="navbar-search" onclick="">-->
-<!--            <span class="icon-search"></span>-->
-<!--            <form method="post" action="/404.html" role="search">-->
-<!--                <span class="search-box">-->
-<!--         <input type="text" class="input" id="cb-search-content" required="true" placeholder="标题 标签..."-->
-<!--                maxlength="30" autocomplete="off">-->
-<!--                </span>-->
-<!--            </form>-->
-<!--        </div>-->
-<!--        <div class="navbar-mobile-menu" onclick="">-->
-<!--            <span class="icon-menu cross"><span class="middle"></span></span>-->
-<!--            <ul>-->
-<!--                {% for link in site.links %}-->
-<!--                <li><a href="{{ link.url }}?liberxue" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{-->
-<!--                    link.name }}</a></li>-->
-<!--                {% endfor %}-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</header>-->
+<header id="header" class="header bg-white">
+    <div class="navbar-container">
+        <a href="/" title="访问 {{  site.title }}" class="navbar-logo"> <img src="{{ site.url }}/style/images/logo.png" alt="{{ site.title }}"> </a>
+        <div class="navbar-menu">
+            {% for link in site.links %}
+            <a href="{{ link.url }}" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{ link.name }}</a>
+            {% endfor %}
+        </div>
+        <div class="navbar-search" onclick="">
+            <span class="icon-search"></span>
+            <form method="post" action="/404.html" role="search">
+                <span class="search-box">
+         <input type="text" class="input" id="cb-search-content" required="true" placeholder="标题 标签..."
+                maxlength="30" autocomplete="off">
+                </span>
+            </form>
+        </div>
+        <div class="navbar-mobile-menu" onclick="">
+            <span class="icon-menu cross"><span class="middle"></span></span>
+            <ul>
+                {% for link in site.links %}
+                <li>
+                    <a href="{{ link.url }}?liberxue" title="访问 {{  link.name }}" data-hover="{{link.name}}">{{link.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</header>
 <main class="tl f6 relative pa4 pa5-ns overflow-hidden">
     {% if page.title %}
     <div class="mb4">
