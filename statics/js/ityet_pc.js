@@ -16,7 +16,7 @@ window.onload=function()
 	// 文字输入特效
 	let divTyping = document.getElementById('etext')
 	let i = 0,
-		timer = 0,
+        timer = 0,
 		str = '千里之行，始于足下。'
 	function typing()
 	{
@@ -34,7 +34,10 @@ window.onload=function()
 	}
 	typing();
 	
-	setTimeout(function(){$("#xuna").show();},8000);
+	setTimeout(function(){
+	    $("#xuna").show();
+	    divTyping.innerHTML = '';
+	},3000);
 	
 	//单击选择框-宽度变化
 	$("#cleft_li01").click(function(){
@@ -52,7 +55,6 @@ window.onload=function()
 		$("#nav05").animate({"left":"0%"},800);
 		$("#nav07").animate({"left":"0%"},800);
 		$("#nav08").animate({"left":"0%"},800);
-		
 	})
 	$("#cleft_li02").click(function(){
 		$("#cleft_li01").css({"background-color":"#f9f9f9"});
