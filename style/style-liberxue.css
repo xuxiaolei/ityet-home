@@ -808,7 +808,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 .post-list-item-container .item-thumb {
     position: relative;
     display: inherit;
-    min-height: 250px;
+    min-height: 150px;
     -webkit-transition: -webkit-transform 500ms ease, filter 500ms ease;
     -moz-transition: -moz-transform 500ms ease, filter 500ms ease;
     transition: transform 500ms ease, filter 500ms ease;
@@ -828,7 +828,7 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 }
 
 .post-list-item-container .item-desc p {
-    font-size: 14px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     word-break: break-all;
@@ -886,8 +886,8 @@ input:-ms-input-placeholder, textarea:-ms-input-placeholder {
 
 .post-list-item-container .item-label {
     position: relative;
-    height: 130px;
-    padding: 25px 20px 40px;
+    height: 110px;
+    padding: 25px 20px 0px;
     background-color: #fff;
 }
 

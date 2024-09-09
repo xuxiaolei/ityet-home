@@ -1,7 +1,7 @@
 ---
 layout: blog
 book: true
-background-image: http://ot1cc1u9t.bkt.clouddn.com/17-7-16/91630214.jpg
+background-image: ../img/202086.jpg
 category: 书籍
 title: liberxue读过书|在读的书
 tags:
