@@ -136,6 +136,9 @@ window.onload=function()
 		$("#nav05").animate({"left":"-100%"},800);
 		$("#nav07").animate({"left":"0%"},800);
 		$("#nav08").animate({"left":"0%"},800);
+		let iframe = $("#nav05 iframe");
+        iframe.attr('src', iframe.attr('src') + (iframe.attr('src').indexOf('?') >= 0 ? '&' : '?') + 't=' + new Date().getTime());
+
 	})
 
 	$("#cleft_li08").click(function(){
@@ -153,13 +156,9 @@ window.onload=function()
 		$("#nav05").animate({"left":"-100%"},800);
 		$("#nav07").animate({"left":"-100%"},800);
 		$("#nav08").animate({"left":"0%"},800);
-	})	
-
-
-
-
-
-
+		let iframe = $("#nav08 iframe");
+        iframe.attr('src', iframe.attr('src') + (iframe.attr('src').indexOf('?') >= 0 ? '&' : '?') + 't=' + new Date().getTime());
+	})
 	$(".nav01_but01").click(function(){
 		$("#cleft_li01").css({"background-color":"#f9f9f9"});
 		$("#cleft_li02").css({"background-color":"#ececec"});
