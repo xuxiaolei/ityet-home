@@ -4,12 +4,11 @@ banana: true
 category: java
 title:  Java自动装箱与拆箱
 date:   2020-07-30 11:22:42
-background-image: _posts/java/assets/2020073001.jpg
+background-image: ../statics/img/nav05_zp02.jpg
 tags:
 - Java
 - 自动装箱
 ---
-
 前天遇到了一个 NullPointerException，触发的代码类似下面这样：
 
 ```java
@@ -133,8 +132,9 @@ Integer value = 10;
 
 **自动拆箱**，是指从包装类对象到其对应的基本数据类型值的自动转换。比如 `int primitive = value;`，是通过调用 Integer.intValue 方法实现转换的。
 
+
 | 基本数据类型 | 包装类型  | 装箱方法                 | 拆箱方法               |
-|--------------|-----------|--------------------------|------------------------|
+| ------------ | --------- | ------------------------ | ---------------------- |
 | boolean      | Boolean   | Boolean.valueOf(boolean) | Boolean.booleanValue() |
 | byte         | Byte      | Byte.valueOf(byte)       | Byte.byteValue()       |
 | char         | Character | Character.valueOf(char)  | Character.charValue()  |
@@ -149,11 +149,8 @@ Integer value = 10;
 自动装箱与拆箱主要发生在以下四种时机：
 
 1. 赋值时；
-
 2. 比较时；
-
 3. 算术运算时；
-
 4. 方法调用时。
 
 ### 常见应用场景
@@ -259,8 +256,9 @@ if (v1 == 10) { // 自动拆箱
 
 Java 为整型值包装类 Byte、Character、Short、Integer、Long 设置了缓存，用于存储一定范围内的值，详细如下：
 
+
 | 类型      | 缓存值范围           |
-|-----------|----------------------|
+| --------- | -------------------- |
 | Byte      | -128 ~ 127           |
 | Character | 0 ~ 127              |
 | Short     | -128 ~ 127           |
@@ -336,9 +334,8 @@ public final class Short extends Number implements Comparable<Short> {
        sum = sum + i;
    }
    ```
-   
-   在循环过程中会分别调用 4000 次 Integer.intValue() 和 Integer.valueOf(int)，并 new 4000 个 Integer 对象，而这些操作将 sum 的类型改为 int 即可避免，节约运行时间和空间，提升性能。
 
+   在循环过程中会分别调用 4000 次 Integer.intValue() 和 Integer.valueOf(int)，并 new 4000 个 Integer 对象，而这些操作将 sum 的类型改为 int 即可避免，节约运行时间和空间，提升性能。
 2. java.lang.NullPointerException
 
    尝试对一个值为 null 的包装类对象进行自动拆箱，就有可能造成 NullPointerException。
