@@ -8,7 +8,7 @@ layout: home
             <div class="post-list-item">
                 <div class="post-list-item-container">
                     <div class="item-thumb  bg-{{posts.background }}" style="background-image:url('{{posts.background-image }}');"></div>
-                    <a href="{{ posts.url }}">
+                    <a target="_blank" href="{{ posts.url }}">
                         <div class="item-desc">
                             <p>{{ posts.content | strip_html | strip_newlines | truncate: 80 }}</p>
                         </div>
