@@ -4,7 +4,7 @@ banana: true
 category: java
 title:  Java自动装箱与拆箱
 date:   2020-07-30 11:22:42
-background-image: ../img/nav05_zp02.jpg
+background-image: _posts/java/assets/2020073001.jpg
 tags:
 - Java
 - 自动装箱
