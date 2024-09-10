@@ -17,14 +17,14 @@ a{
 /* NO1-首页内容 */
 #exnav01{
 	width: 100%;
-	display: block;
+	display: none;
 }
 .exn1_top{
 	width: 100%;
 	height: 45px;
 	line-height: 50px;
 	/* 首页顶栏背景颜色 */
-	background-image: linear-gradient(to top left,#a379f1 , #13e2da);
+	background-image: linear-gradient(to top left, #ec844d, #c8e78b);
 }
 .exn1_top img{
 	width: 35px;
@@ -33,11 +33,11 @@ a{
 	margin-left: 5%;
 }
 .exn1_top span{
-	color: #282828;
-	font: 45px cnm,Arial,sans-serif;
-	text-shadow: 3px 3px 3px #29738b;
+	color: #ffffff;
+	font: 30px ityet,Arial,sans-serif;
+	text-shadow: 3px 3px 3px #b1dc2b;
 	font-weight: 400;
-	margin-left: 8px;
+	margin-left: 50px;
 }
 .exn1_top a{
 	color: #282828;
@@ -48,9 +48,9 @@ a{
 }
 .exn1_banner{
 	width: 100%;
-	height: 220px;
+	height: 120px;
 	/* 顶部头图 */
-	background-image: url(../img/start.jpg);
+	/*background-image: url(../img/start.jpg);*/
 	/* background-image: url(图片api路径); */
 	background-size: cover;
 }
@@ -61,7 +61,7 @@ a{
 	font-weight: 600;
 	letter-spacing: 5px;
 	margin-left: 5%;
-	padding-top: 16%;
+	padding-top: 5%;
 }
 .exn1_banner p{
 	font: 14px cnm,Arial,sans-serif;
@@ -388,7 +388,7 @@ a{
 }
 .exn5_bg{
 	width: 100%;
-	height: 240px;
+	height: 150px;
 	/* 站点展示顶部头图 */
 	background-image: url(../img/zhandian.jpg);
 	background-size: cover;
@@ -422,7 +422,7 @@ a{
 }
 .exn5_nr{
 	width: 90%;
-	margin: 60px auto;
+	margin: 25px auto;
 }
 .exnav05_centent_tit{
 	text-align: center;
@@ -436,10 +436,10 @@ a{
 }
 .exnav05_centent_mb{
 	width: 100%;
-	height: 240px;
+	height: 200px;
 	background: #fff;
 	border-radius: 10px;
-	margin-top: 50px;
+	margin-top: 20px;
 	position: relative;
 }
 .exnav05_centent_mb a{
@@ -467,7 +467,7 @@ a{
 	text-shadow: 5px 5px 5px #909090;
 	font-weight: 600;
 	margin-left: 5%;
-	margin-top: 20px;
+	margin-top: 5px;
 	color: #282828;
 	letter-spacing: 2px;
 }
@@ -480,6 +480,131 @@ a{
 	letter-spacing: 1px;
 }
 .exnav05_centent_mb>div{
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-color: #333;
+	top: 0;
+	left: 0;
+	border-radius: 10px 10px 0px 0px;
+	z-index: 2;
+	background-color: #cfbc9a;
+	text-align: center;
+	line-height: 30px;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	color: #f9f9f9;
+	transition: 0.5s;
+}
+.exnav05_footer{
+	width: 100%;
+	height: 20px;
+	text-align: center;
+	color: #b3bdc3;
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 2px;
+	margin: 60px 0px 40px 0px;
+}
+/* NO6-文章展示 */
+#exnav06{
+	display: block;
+}
+.exn6_bg{
+	width: 100%;
+	height: 240px;
+	/* 站点展示顶部头图 */
+	/*background-image: url(../img/zhandian.jpg);*/
+	background-size: cover;
+	position: relative;
+}
+.exn6_bg_nav{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	/* 站点展示页面顶图文字背景颜色 */
+	background-image: linear-gradient(to top left,#25d8df , #69cd76);
+	box-shadow: 0px 0px 10px rgba(40,40,40,0.08);
+	border-radius: 5px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	margin: auto;
+}
+.exn6_bg_nav img{
+	width: 30px;
+	margin: 5px;
+	float: left;
+}
+.exn6_bg_nav span{
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	float: left;
+	margin-left: 10px;
+}
+.exn6_nr{
+	width: 90%;
+	margin: 60px auto;
+}
+.exnav06_centent_tit{
+	text-align: center;
+}
+.exnav06_centent_tit h2{
+	font-size: 24px;
+}
+.exnav06_centent_tit p{
+	color: rgba(68, 63, 63, 0.5);
+	font-size: 15px;
+}
+.exnav06_centent_mb{
+	width: 100%;
+	height: 240px;
+	background: #fff;
+	border-radius: 10px;
+	margin-top: 50px;
+	position: relative;
+}
+.exnav06_centent_mb a{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+}
+.exnav06_centent_mb:hover div{
+	top: -30px;
+}
+.exnav06_centent_mb a div{
+	width: 100%;
+	height: 160px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+.exnav06_centent_mb a div img{
+	width: 100%;
+}
+.exnav06_centent_mb a h3{
+	font: 18px cnm,Arial,sans-serif;
+	text-shadow: 5px 5px 5px #909090;
+	font-weight: 600;
+	margin-left: 5%;
+	margin-top: 20px;
+	color: #282828;
+	letter-spacing: 2px;
+}
+.exnav06_centent_mb a p{
+	font-size: 12px;
+	font-weight: 400;
+	margin-left: 5%;
+	margin-top: 5px;
+	color: #bbbbbb;
+	letter-spacing: 1px;
+}
+.exnav06_centent_mb>div{
 	position: absolute;
 	width: 100%;
 	height: 100px;
@@ -497,7 +622,7 @@ a{
 	color: #f9f9f9;
 	transition: 0.5s;
 }
-.exnav05_footer{
+.exnav06_footer{
 	width: 100%;
 	height: 20px;
 	text-align: center;
