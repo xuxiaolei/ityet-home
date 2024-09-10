@@ -1,5 +1,7 @@
 	$(function(){
 	$("#exnav li:nth-child(1)").click(function(){
+		let srcUrl = $("#exnav06 iframe").data('src');
+        $("#exnav06 iframe").attr('src', srcUrl+'?t=' + new Date().getTime());
 		$("#exnav06").show();
 		$("#exnav02").hide();
 		$("#exnav03").hide();

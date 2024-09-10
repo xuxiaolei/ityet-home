@@ -6,6 +6,7 @@ $(document).ready(function(){
 	}else{
 		$("#pc").hide();
 		$("#mp").show();
-		$("#exnav06").show();
+		let srcUrl = $("#exnav06 iframe").data('src');
+        $("#exnav06 iframe").attr('src', srcUrl+'?t=' + new Date().getTime());
 	}
 })
