@@ -93,6 +93,8 @@ window.onload=function()
 		$("#nav08").animate({"left":"0%"},800);
 	})
 	$("#cleft_li04").click(function(){
+		let srcUrl = $("#nav04 iframe").data('src');
+        $("#nav04 iframe").attr('src', srcUrl+'?t=' + new Date().getTime());
 		$("#cleft_li01").css({"background-color":"#f9f9f9"});
 		$("#cleft_li02").css({"background-color":"#f9f9f9"});
 		$("#cleft_li03").css({"background-color":"#f9f9f9"});
