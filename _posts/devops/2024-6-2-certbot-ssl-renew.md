@@ -80,7 +80,7 @@ Let's Encrypt 有规定，证书 90 天后会过期，会提前一个月发邮�
 
 好了，我们接着往下走，在原来**手动验证**的命令行，改成：
 
- ```
+ ```bash
 certbot certonly \
 --email your-email@example.com \
 --agree-tos \
@@ -101,7 +101,7 @@ __
 
 如果你用了上面我介绍的**自动验证**方式获取的证书，那么要更新证书就很简单了，一条命令搞定：
 
-```
+```bash
 certbot renew
 ```
 
@@ -116,7 +116,7 @@ __
 
 方法一：在上面**自动验证**的命令行基础上，加上 --force-renewal 参数，强制再更新一次证书。
 
-```
+```bash
 manual_auth_hook = /path/to/http/authenticator.sh
 manual_cleanup_hook = /path/to/http/cleanup.sh
 ```
@@ -129,7 +129,7 @@ __
 
 写个简单的脚本 certrenew.sh
 
-```
+```bash
 #!/usr/bin/env bash
 echo "[$(date +%Y-%m-%d/%H:%M:%S)]"
 certbot renew
@@ -138,7 +138,7 @@ systemctl restart nginx
 
 加入计划任务 crontab -e
 
-```
+```bash
 # 每月15号01:00执行一次更新，并重启nginx服务器
 0 1 15 * * /usr/bin/sh /path/to/certrenew.sh >>/path/to/certrenew.sh.log 2>&1
 ```
