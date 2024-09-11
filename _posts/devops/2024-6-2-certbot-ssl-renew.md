@@ -1,3 +1,14 @@
+---
+layout: blog
+istop: true
+title: "SSL通配符证书的自动申请更新"
+background-image: ../img/17260397848891_3zeSuVrfA4LI7U41uUXtzw.png
+date:  2024-03-15 13:45:56
+category: devops
+tags:
+- https
+- ssl
+---
 
 # 准备工作
 
