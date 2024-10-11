@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: blog
+banana: true
+category: java
 title: MySQL主从同步延迟问题分析与解决方案探讨
 date: '2024-10-11 14:12:31'
 permalink: /post/mysql-master-slack-synchronization-reduction-delay-zjukgb.html

@@ -1,5 +1,7 @@
 ---
-layout: post
+layout: blog
+banana: true
+category: java
 title: mysql主从降低延迟
 date: '2024-10-11 15:06:54'
 permalink: /post/mysql-master-and-slave-delay-1schip.html
