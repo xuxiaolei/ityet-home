@@ -1,10 +1,3 @@
----
-layout: post
-title: mysql主从同步降低延迟
-date: '2024-10-11 14:12:31'
-permalink: /post/mysql-master-slack-synchronization-reduction-delay-zjukgb.html
-published: true
----
 
 # mysql主从同步降低延迟
 
