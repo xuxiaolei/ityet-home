@@ -2,7 +2,7 @@
 layout: blog
 istop: true
 title: "mysql主从降低延迟"
-date: 2024-10-11 15:06:54
+date:  2024-10-11 15:06:54
 background-image: ../statics/img/nav05_zp02.jpg
 tags:
 - mysql
