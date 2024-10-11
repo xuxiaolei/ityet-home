@@ -1,21 +1,3 @@
----
-layout: post
-title: MySQL主从同步延迟问题分析与解决方案探讨
-date: '2024-10-11 14:12:31'
-permalink: >-
-  /post/mysql-master-synchronous-delayed-problem-analysis-and-solution-discussion-1th6je.html
-tagline: >-
-  本文讨论了MySQL主从同步降低延迟的必要性，介绍了主从架构的两种方案：客户端直连和带proxy的架构。分析了主从同步的过程及可能产生延迟的原因，并提出了五种应对策略：强制走主库、sleep方案、判断主从无延迟、等主库位点和等GTID方案。
-tags:
-  - mysql同步
-  - 主从架构
-  - 读写分离
-  - 负载均衡
-  - 延迟处理
-categories:
-  - java
-published: true
----
 
 # MySQL主从同步延迟问题分析与解决方案探讨
 
