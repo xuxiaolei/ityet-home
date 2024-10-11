@@ -4,7 +4,7 @@ description:      "「角落」敲代码。"
 url:              https://ityet.com
 signoff:          "Leo"
 facebook_appid:   
-google_analytics: UA-101222464-1
+google_analytics:
 share:            true 
 # 分页
 paginate: 15
