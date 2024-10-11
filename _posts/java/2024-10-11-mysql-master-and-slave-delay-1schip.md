@@ -4,8 +4,7 @@ banana: true
 category: java
 title: mysql主从降低延迟
 date: '2024-10-11 15:06:54'
-background-image: https://picx.zhimg.com/80/v2-c6136a3f1a5b8b641e17eec4fe3524f3_1440w.webp?source=1def8aca
-published: true
+background-image: ../statics/img/nav05_zp02.jpg
 ---
 
 # mysql主从降低延迟
